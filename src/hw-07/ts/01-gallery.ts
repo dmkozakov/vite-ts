@@ -1,4 +1,4 @@
-import { BasicLightBox, BasicLightBoxOptions } from "basiclightbox";
+import { BasicLightBox } from "basiclightbox";
 import { galleryItems } from "./gallery-items.js";
 
 const refs = {
@@ -10,7 +10,7 @@ refs.galleryBox.insertAdjacentHTML("beforeend", galleryMarkup);
 
 refs.galleryBox.addEventListener("click", onGalleryItemClick);
 
-interface Picture {
+export interface Picture {
   preview: string;
   original: string;
   description: string;
